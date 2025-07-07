@@ -1,28 +1,3 @@
-// const express = require('express');
-// const Gift = require('../models/gifts');
-// const router = express.Router();
-
-// // Gift Filtering API
-// router.get('/filter', async (req, res) => {
-//     try {
-//         const { gender, age, occasion, budget } = req.query;
-        
-//         let filter = {};
-//         if (gender) filter.gender = gender;
-//         if (age) filter.age = age;
-//         if (occasion) filter.occasion = occasion;
-//         if (budget) filter.price = { $lte: Number(budget) };
-        
-//         const gifts = await Gift.find(filter);
-//         res.json(gifts);
-//     } catch (error) {
-//         res.status(500).json({ message: 'Error fetching gifts', error });
-//     }
-// });
-
-// module.exports = router;
-
-
 const express = require('express');
 const Gift = require('../models/gifts'); // Make sure this model has gender/age/occasion as arrays
 const router = express.Router();

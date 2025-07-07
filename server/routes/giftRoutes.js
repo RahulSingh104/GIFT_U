@@ -1,30 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-// const Product = require('../models/Product');
-
-// // GET /api/gifts/filter
-// router.get('/filter', async (req, res) => {
-//   const { gender, age, occasion, budget } = req.query;
-
-//   try {
-//     let query = {};
-
-//     if (gender) query.gender = gender;
-//     if (age) query.age = age;
-//     if (occasion) query.occasion = occasion;
-//     if (budget) query.price = { $lte: parseFloat(budget) };
-
-//     const products = await Product.find(query);
-//     res.json(products);
-//   } catch (err) {
-//     console.error("Filter error:", err);
-//     res.status(500).json({ message: "Server error" });
-//   }
-// });
-
-// module.exports = router;
-
-
 const express = require('express');
 const Gift = require('../models/gifts');
 const router = express.Router();
